@@ -1,0 +1,74 @@
+body {
+    background: rgb(221, 220, 220);
+  }
+  .formBox {
+      max-width: 760px;
+      margin: 20px auto;
+      border-radius: 4px;
+      position: relative;
+  }
+
+  header {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0 25px 0;
+  }
+
+  .btn-saveData {
+    margin-bottom: 5px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-group li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list__body {
+    display: flex;
+  }
+
+  .list__checkbox {
+    margin: 0 20px 0 0;
+    min-width: 24px;
+    max-height: 24px;
+    border: solid 1px black;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .list__delete:hover {
+    color: brown;
+    cursor: pointer;
+  }
+
+  .list__edit {
+    height: 24px;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .checked > .list__body > .list__checkbox {
+    color: cadetblue;
+    font-weight: bold;
+  }
+
+  .checked > .list__body > .list__checkbox::after {
+    content: 'V';
+  }
+
+  .checked > .list__body > .list__text {
+    text-decoration: line-through;
+    color: rgb(211, 210, 210);
+  }

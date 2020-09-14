@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Todolist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="./index.css" />
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div class="formBox">
+    <header>
+        My Todolist
+    </header>
+    <button type="button" class="btn-saveData btn btn-info btn-sm">save todolist</button>
+    <section class="addList">
+      <form class="addList__form">
+        <div class="input-group">
+          <input type="text" name="task" class="form-control" placeholder="New Task...">
+        </div>
+      </form>
+    </section>
+    <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav__all nav-item">
+              <a class="nav-link active">All</a>
+            </li>
+            <li class="nav__task nav-item">
+              <a class="nav-link">Task</a>
+            </li>
+            <li class="nav__completed nav-item">
+              <a class="nav-link">Completed</a>
+            </li>
+          </ul>
+          <button type="button" class="btn-clearAll btn btn-secondary btn-sm">clear all</button>
+        </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item unchecked">
+        <div class="list__body">
+          <div class="list__checkbox"></div>
+          <div class="list__text">Cras</div>
+          <input type="text" class="list__edit form-control hide" name="edit" />
+        </div>
+        <div class="list__delete">X</div>
+      </li>
+      <li class="list-group-item unchecked">
+        <div class="list__body">
+          <div class="list__checkbox"></div>
+          <div class="list__text">Cras justo</div>
+          <input type="text" class="list__edit form-control hide" name="edit" />
+        </div>
+        <div class="list__delete">X</div>
+      </li>
+      <li class="list-group-item unchecked">
+        <div class="list__body">
+          <div class="list__checkbox"></div>
+          <div class="list__text">Cras justo odio</div>
+          <input type="text" class="list__edit form-control hide" name="edit" />
+        </div>
+        <div class="list__delete">X</div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
